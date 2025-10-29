@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Professional Blue/Teal Theme */
+  --primary-color: #3b82f6;
+  --secondary-color: #1e40af;
+  --accent-color: #06b6d4;
+  --dark-bg: #0f172a;
+  --card-bg: rgba(59, 130, 246, 0.05);
+  --text-primary: #ffffff;
+  --text-secondary: #94a3b8;
+  --gradient-1: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  --gradient-2: linear-gradient(135deg, #06b6d4 0%, #0284c7 100%);
+  --gradient-3: linear-gradient(135deg, #2563eb 0%, #06b6d4 100%);
+  
+  /* Alternative Professional Themes - Uncomment to use */
+  
+  /* Navy Corporate - Very Professional */
+  /* --primary-color: #1e3a8a;
+  --secondary-color: #1e40af;
+  --accent-color: #3b82f6;
+  --dark-bg: #0a1628;
+  --card-bg: rgba(30, 58, 138, 0.05);
+  --gradient-1: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+  --gradient-2: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  --gradient-3: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%); */
+  
+  /* Slate Gray Professional */
+  /* --primary-color: #475569;
+  --secondary-color: #334155;
+  --accent-color: #64748b;
+  --dark-bg: #0f172a;
+  --card-bg: rgba(71, 85, 105, 0.05);
+  --gradient-1: linear-gradient(135deg, #475569 0%, #334155 100%);
+  --gradient-2: linear-gradient(135deg, #64748b 0%, #475569 100%);
+  --gradient-3: linear-gradient(135deg, #94a3b8 0%, #64748b 100%); */
+  
+  /* Deep Teal Professional */
+  /* --primary-color: #0d9488;
+  --secondary-color: #0f766e;
+  --accent-color: #14b8a6;
+  --dark-bg: #0c1618;
+  --card-bg: rgba(13, 148, 136, 0.05);
+  --gradient-1: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+  --gradient-2: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+  --gradient-3: linear-gradient(135deg, #2dd4bf 0%, #14b8a6 100%); */
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background: var(--dark-bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
