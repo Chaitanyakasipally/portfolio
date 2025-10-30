@@ -121,32 +121,10 @@ const Intro = () => {
                 transition={{ delay: 0.6, duration: 0.8 }}
               >
                 Passionate about creating innovative solutions and exploring the frontiers of 
-                Artificial Intelligence and Machine Learning. With a strong foundation in software 
+                Artificial Intelligence and Machine Learning. With a strong foundation in automotive software 
                 development and a keen interest in cutting-edge technologies, I strive to build 
-                impactful applications that make a difference.
+                impactful applications that make a difference.Please feel free to reach out to me for any questions or collaborations via chaitnaya.kasipally@gmail.com.
               </motion.p>
-              
-              <motion.div 
-                className="hero-buttons"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.8, duration: 0.8 }}
-              >
-                <motion.button 
-                  className="btn-primary"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  Download CV
-                </motion.button>
-                <motion.button 
-                  className="btn-secondary"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  Contact Me
-                </motion.button>
-              </motion.div>
             </div>
           </div>
         </motion.section>
