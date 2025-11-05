@@ -7,10 +7,9 @@ A modern, animated portfolio website built with React, featuring smooth animatio
 - **Modern Design**: Beautiful gradients, animations, and glassmorphism effects
 - **Smooth Animations**: Powered by Framer Motion for engaging user experience
 - **Responsive**: Fully responsive design that works on all devices
-- **Three Main Sections**:
+- **Two Main Sections**:
   - 🏠 **Home**: About me, professional experience, and education
-  - 🔬 **Research**: AI/ML research timeline (coming soon)
-  - 💬 **Chatbot**: Personal AI chatbot (under development)
+  - 💬 **Chatbot**: Car Performance AI Chatbot
 
 ## 📦 Technologies Used
 
