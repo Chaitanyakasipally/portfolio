@@ -273,7 +273,7 @@
 
 /* Stats Section */
 .stats-section {
-  padding: 4rem 0 6rem;
+  padding: 4rem 0 2rem;
 }
 
 .stats-grid {
@@ -312,6 +312,118 @@
   font-size: 1rem;
 }
 
+/* Artifacts Section */
+.artifacts-section {
+  padding: 4rem 0 6rem;
+}
+
+.artifacts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.artifact-tile {
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.artifact-tile::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-1);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.artifact-tile:hover::before {
+  transform: scaleX(1);
+}
+
+.artifact-tile:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 25px 70px rgba(59, 130, 246, 0.3);
+}
+
+.artifact-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  animation: float-gentle 3s ease-in-out infinite;
+}
+
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.artifact-title {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.artifact-name {
+  font-size: 1.75rem;
+  color: var(--text-primary);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.artifact-description {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  min-height: 80px;
+}
+
+.artifact-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tag {
+  background: rgba(59, 130, 246, 0.15);
+  color: var(--primary-color);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.artifact-cta {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.artifact-tile:hover .artifact-cta {
+  transform: translateX(5px);
+}
+
 /* Responsive Design */
 @media (max-width: 968px) {
   .hero-content {
@@ -337,6 +449,10 @@
   }
   
   .education-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .artifacts-grid {
     grid-template-columns: 1fr;
   }
 }

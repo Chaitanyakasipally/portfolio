@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
 import './Intro.css'
 
 const Intro = () => {
+  const navigate = useNavigate()
+  
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -165,6 +168,69 @@ const Intro = () => {
             >
               <div className="stat-value">100%</div>
               <div className="stat-label">Results Driven</div>
+            </motion.div>
+          </div>
+        </motion.section>
+
+        {/* Artifacts Section */}
+        <motion.section 
+          className="artifacts-section"
+          variants={itemVariants}
+        >
+          <h2 className="section-title">
+            <span className="title-icon">✨</span>
+            My Artifacts
+          </h2>
+          
+          <div className="artifacts-grid">
+            <motion.div 
+              className="artifact-tile"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ delay: 0.1 }}
+              whileHover={{ scale: 1.03, y: -10 }}
+              onClick={() => navigate('/chatbot')}
+            >
+              <div className="artifact-icon">🤖</div>
+              <h3 className="artifact-title">Artifact 1</h3>
+              <h4 className="artifact-name">Car Performance Research Assistant</h4>
+              <p className="artifact-description">
+                An intelligent GPT-5 powered chatbot that analyzes automotive performance datasets, 
+                compares brands and models, and delivers actionable insights on fuel efficiency, 
+                emissions, and vehicle optimization through natural language queries.
+              </p>
+              <div className="artifact-tags">
+                <span className="tag">GPT-5</span>
+                <span className="tag">Data Analysis</span>
+                <span className="tag">Automotive</span>
+              </div>
+              <div className="artifact-cta">Explore →</div>
+            </motion.div>
+
+            <motion.div 
+              className="artifact-tile"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ delay: 0.2 }}
+              whileHover={{ scale: 1.03, y: -10 }}
+              onClick={() => navigate('/timeline-analysis')}
+            >
+              <div className="artifact-icon">📊</div>
+              <h3 className="artifact-title">Artifact 2</h3>
+              <h4 className="artifact-name">AI/ML Timeline Evolution</h4>
+              <p className="artifact-description">
+                A comprehensive chronological narrative documenting 74 years of AI/ML development 
+                from Turing's 1950 question "Can machines think?" to 2024's multimodal generative AI, 
+                featuring key milestones, breakthroughs, and paradigm shifts with academic references.
+              </p>
+              <div className="artifact-tags">
+                <span className="tag">Research</span>
+                <span className="tag">History</span>
+                <span className="tag">Education</span>
+              </div>
+              <div className="artifact-cta">Explore →</div>
             </motion.div>
           </div>
         </motion.section>

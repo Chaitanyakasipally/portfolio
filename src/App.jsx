@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navigation from './components/Navigation'
 import Intro from './pages/Intro'
 import Chatbot from './pages/Chatbot'
+import TimelineAnalysis from './pages/TimelineAnalysis'
 import './App.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Intro />} />
           <Route path="/chatbot" element={<Chatbot />} />
+          <Route path="/timeline-analysis" element={<TimelineAnalysis />} />
         </Routes>
       </div>
     </Router>

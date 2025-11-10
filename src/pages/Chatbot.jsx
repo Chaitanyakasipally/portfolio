@@ -179,6 +179,19 @@ const Chatbot = () => {
               </ul>
             </div>
 
+            <div className="description-section">
+              <h3 className="section-heading">Reflection</h3>
+              <p className="section-text">
+                Building this Car Performance Research Chatbot has been an enlightening experience that bridged my background in automotive engineering with cutting-edge AI technologies. The project challenged me to think critically about how AI can transform traditional automotive analysis workflows, moving from manual spreadsheet-based comparisons to intelligent, conversational data exploration.
+              </p>
+              <p className="section-text">
+                Working with GPT-5's advanced capabilities taught me the importance of structured data preparation and clear prompt engineering. I learned that the most effective AI tools aren't just about automation—they're about augmenting human decision-making with instant, accurate insights. The process of optimizing the datasets and designing the chatbot's analytical logic reinforced my understanding of how data quality directly impacts AI performance.
+              </p>
+              <p className="section-text">
+                This artifact represents the convergence of my automotive domain expertise and growing AI proficiency. It demonstrated that successful AI applications require deep understanding of both the technology and the problem domain. Moving forward, this experience has inspired me to explore more ways AI can revolutionize automotive research, particularly in predictive maintenance, autonomous systems validation, and sustainable vehicle design optimization.
+              </p>
+            </div>
+
             <div className="description-section references">
               <h3 className="section-heading">References</h3>
               <ul className="reference-list">
