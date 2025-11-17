@@ -3,6 +3,7 @@ import Navigation from './components/Navigation'
 import Intro from './pages/Intro'
 import Chatbot from './pages/Chatbot'
 import TimelineAnalysis from './pages/TimelineAnalysis'
+import DeepLearning from './pages/DeepLearning'
 import './App.css'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Intro />} />
           <Route path="/chatbot" element={<Chatbot />} />
           <Route path="/timeline-analysis" element={<TimelineAnalysis />} />
+          <Route path="/deep-learning" element={<DeepLearning />} />
         </Routes>
       </div>
     </Router>

@@ -14,7 +14,8 @@ const Navigation = () => {
 
   const artifactItems = [
     { path: '/chatbot', label: 'Artifact 1: AI Chatbot', icon: '🤖' },
-    { path: '/timeline-analysis', label: 'Artifact 2: Timeline Analysis', icon: '📊' }
+    { path: '/timeline-analysis', label: 'Artifact 2: Timeline Analysis', icon: '📊' },
+    { path: '/deep-learning', label: 'Artifact 3: Deep Learning & Neurons', icon: '🧠' }
   ]
 
   const isArtifactActive = artifactItems.some(item => item.path === location.pathname)

@@ -232,6 +232,31 @@ const Intro = () => {
               </div>
               <div className="artifact-cta">Explore →</div>
             </motion.div>
+
+            <motion.div 
+              className="artifact-tile"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ delay: 0.3 }}
+              whileHover={{ scale: 1.03, y: -10 }}
+              onClick={() => navigate('/deep-learning')}
+            >
+              <div className="artifact-icon">🧠</div>
+              <h3 className="artifact-title">Artifact 3</h3>
+              <h4 className="artifact-name">Deep Learning & Neurons</h4>
+              <p className="artifact-description">
+                A plain-language explanation of deep learning and neural networks that makes complex 
+                AI concepts accessible to everyone. Using analogies, simplified diagrams, and step-by-step 
+                breakdowns to transform advanced machine learning ideas into approachable knowledge.
+              </p>
+              <div className="artifact-tags">
+                <span className="tag">Education</span>
+                <span className="tag">Neural Networks</span>
+                <span className="tag">AI Concepts</span>
+              </div>
+              <div className="artifact-cta">Explore →</div>
+            </motion.div>
           </div>
         </motion.section>
 
