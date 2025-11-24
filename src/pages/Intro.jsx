@@ -257,6 +257,31 @@ const Intro = () => {
               </div>
               <div className="artifact-cta">Explore →</div>
             </motion.div>
+
+            <motion.div 
+              className="artifact-tile"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ delay: 0.4 }}
+              whileHover={{ scale: 1.03, y: -10 }}
+              onClick={() => navigate('/personal-value')}
+            >
+              <div className="artifact-icon">⚖️</div>
+              <h3 className="artifact-title">Artifact 4</h3>
+              <h4 className="artifact-name">Personal Value Statement & Strategies to Address Human Bias</h4>
+              <p className="artifact-description">
+                A comprehensive framework for reducing human bias in automotive engineering environments. 
+                Features practical strategies for fairness, inclusive leadership, and ethical decision-making 
+                to improve team outcomes and technical accuracy in cross-functional engineering workflows.
+              </p>
+              <div className="artifact-tags">
+                <span className="tag">Leadership</span>
+                <span className="tag">Ethics</span>
+                <span className="tag">Team Collaboration</span>
+              </div>
+              <div className="artifact-cta">Explore →</div>
+            </motion.div>
           </div>
         </motion.section>
 
