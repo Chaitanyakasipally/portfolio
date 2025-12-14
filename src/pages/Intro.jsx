@@ -282,6 +282,31 @@ const Intro = () => {
               </div>
               <div className="artifact-cta">Explore →</div>
             </motion.div>
+
+            <motion.div 
+              className="artifact-tile"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ delay: 0.5 }}
+              whileHover={{ scale: 1.03, y: -10 }}
+              onClick={() => navigate('/leadership')}
+            >
+              <div className="artifact-icon">🎯</div>
+              <h3 className="artifact-title">Artifact 5</h3>
+              <h4 className="artifact-name">AI/ML Leadership & Change Management Framework</h4>
+              <p className="artifact-description">
+                A personal AI/ML leadership and change management framework demonstrating strategic vision 
+                for responsible AI transformation. Integrates ethics, collaboration, continuous learning, 
+                and effective change management for leading AI initiatives in complex organizations.
+              </p>
+              <div className="artifact-tags">
+                <span className="tag">AI Strategy</span>
+                <span className="tag">Change Management</span>
+                <span className="tag">Leadership</span>
+              </div>
+              <div className="artifact-cta">Explore →</div>
+            </motion.div>
           </div>
         </motion.section>
 

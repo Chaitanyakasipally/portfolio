@@ -5,6 +5,7 @@ import Chatbot from './pages/Chatbot'
 import TimelineAnalysis from './pages/TimelineAnalysis'
 import DeepLearning from './pages/DeepLearning'
 import PersonalValue from './pages/PersonalValue'
+import Leadership from './pages/Leadership'
 import './App.css'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/timeline-analysis" element={<TimelineAnalysis />} />
           <Route path="/deep-learning" element={<DeepLearning />} />
           <Route path="/personal-value" element={<PersonalValue />} />
+          <Route path="/leadership" element={<Leadership />} />
         </Routes>
       </div>
     </Router>
